@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX Prompter</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Particle container -->
+    <div id="particles-js"></div>
+
+    <nav>
+        <div class="logo">UX Prompter</div>
+        <div>
+            <a href="#">About</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="categories">
+            <!-- Keep 'All' solid for distinction -->
+            <button class="category-btn active" data-category="all"><i class="fa-solid fa-asterisk"></i> All</button>
+            <!-- Use fa-regular for outline icons -->
+            <button class="category-btn" data-category="ux"><i class="fa-regular fa-user"></i> UX Design</button>
+            <button class="category-btn" data-category="ui"><i class="fa-regular fa-object-group"></i> UI Design</button> <!-- Changed icon -->
+            <button class="category-btn" data-category="interaction"><i class="fa-regular fa-hand-pointer"></i> Interaction Design</button>
+            <button class="category-btn" data-category="ia"><i class="fa-regular fa-diagram-project"></i> Information Architecture</button> <!-- Changed icon -->
+            <button class="category-btn" data-category="service"><i class="fa-regular fa-handshake-angle"></i> Service Design</button> <!-- Changed icon -->
+        </div>
+
+        <div class="actions">
+            <button id="new-challenge-btn"><i class="fa-solid fa-arrows-rotate"></i> New Challenge</button>
+            <button id="download-btn"><i class="fa-solid fa-download"></i></button>
+        </div>
+
+        <div class="prompt-box">
+            <p id="prompt-text">Click "New Challenge" to get started!</p>
+        </div>
+    </main>
+
+    <div class="bottom-pattern"></div>
+
+    <!-- tsParticles library (Add this line) -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html> 
