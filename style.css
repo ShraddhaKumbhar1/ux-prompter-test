@@ -61,19 +61,21 @@ nav a:hover {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* Align content higher */
+    align-items: center; /* Restore center alignment */
+    justify-content: flex-start; /* Keep Align content higher */
     padding: 3rem; /* Existing padding */
-    padding-top: 10vh; /* Add padding from the top */
-    text-align: center;
+    padding-top: 10vh; /* Keep padding from the top */
+    text-align: center; /* Restore center text alignment */
 }
 
 .categories {
     margin-bottom: 2rem; /* Increased */
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; /* Restore center alignment */
     gap: 1rem; /* Increased */
+    /* width: 100%; // Removed */
+    /* max-width: 900px; // Removed */
 }
 
 .category-btn {
@@ -93,13 +95,13 @@ nav a:hover {
 }
 
 .category-btn:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Restored hover background */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark semi-transparent black on hover */
     transform: scale(1.05); /* Restored scale */
     /* filter: brightness(1.15); // Removed brightness filter */
 }
 
 .category-btn.active {
-    background-color: rgba(255, 255, 255, 0.2); /* Restored active state */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark semi-transparent black for active */
     color: #FFFFFF; /* Restore white text */
     /* Keep active state visually distinct */
     transform: scale(1); /* Ensure active state doesn't keep hover scale */
@@ -109,35 +111,39 @@ nav a:hover {
 .actions {
     margin-bottom: 2rem; /* Increased */
     display: flex;
+    /* justify-content: flex-start; // Removed, defaults should work for centering */
     gap: 1rem; /* Increased */
+    /* width: 100%; // Removed */
+    /* max-width: 900px; // Removed */
 }
 
 #new-challenge-btn,
 #download-btn {
-    background-color: transparent; /* Transparent background */
-    color: #FFFFFF; /* White text/icon */
-    border: 2px solid #FFFFFF; /* Restored border width */
-    padding: calc(0.9rem - 2px) calc(1.8rem - 2px); /* Restored padding */
-    border-radius: 10px; /* Slightly increased */
+    background-color: #FFFFFF; /* White background */
+    color: #212529; /* Set static dark color */
+    border: none; /* Remove border */
+    padding: 0.9rem 1.8rem; /* Adjusted padding */
+    border-radius: 10px; 
     cursor: pointer;
-    font-size: 1.1rem; /* Increased */
+    font-size: 1.1rem; 
     font-weight: bold;
     font-family: inherit;
     /* Adjust transition */
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
     display: inline-flex;
     align-items: center;
-    gap: 0.6rem; /* Increased */
+    gap: 0.6rem; 
 }
 
 #download-btn {
-    padding: calc(0.9rem - 2px); /* Restored padding */
+    padding: 0.9rem; /* Adjusted padding */
 }
 
-/* Adjust hover effect for outline style */
+/* Update hover for white primary buttons */
 #new-challenge-btn:hover,
 #download-btn:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Restored faint white background on hover */
+    background-color: #F0F0F0; /* Restore slightly off-white/gray on hover */
+    transform: scale(1.05); /* Add scaling effect */
     /* filter: brightness(0.9); // Remove filter */
 }
 
