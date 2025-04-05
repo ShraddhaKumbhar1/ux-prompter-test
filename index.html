@@ -22,13 +22,13 @@
     <main class="container">
         <div class="categories">
             <!-- Keep 'All' solid for distinction -->
-            <button class="category-btn active" data-category="all"><i class="fa-solid fa-asterisk"></i> All</button>
+            <!-- <button class="category-btn active" data-category="all"><i class="fa-solid fa-asterisk"></i> All</button> -->
             <!-- Use fa-regular for outline icons -->
-            <button class="category-btn" data-category="ux"><i class="fa-regular fa-user"></i> UX Design</button>
-            <button class="category-btn" data-category="ui"><i class="fa-regular fa-object-group"></i> UI Design</button> <!-- Changed icon -->
-            <button class="category-btn" data-category="interaction"><i class="fa-regular fa-hand-pointer"></i> Interaction Design</button>
-            <button class="category-btn" data-category="ia"><i class="fa-regular fa-diagram-project"></i> Information Architecture</button> <!-- Changed icon -->
-            <button class="category-btn" data-category="service"><i class="fa-regular fa-handshake-angle"></i> Service Design</button> <!-- Changed icon -->
+            <button class="category-btn" data-category="ux"><i class="fa-solid fa-user"></i> UX Design</button>
+            <button class="category-btn" data-category="ui"><i class="fa-solid fa-object-group"></i> UI Design</button> <!-- Changed icon -->
+            <button class="category-btn" data-category="interaction"><i class="fa-solid fa-hand-pointer"></i> Interaction Design</button>
+            <button class="category-btn" data-category="product"><i class="fa-solid fa-lightbulb"></i> Product Design</button> <!-- Changed from IA -->
+            <button class="category-btn" data-category="service"><i class="fa-solid fa-handshake-angle"></i> Service Design</button> <!-- Changed icon -->
         </div>
 
         <div class="actions">
@@ -37,7 +37,7 @@
         </div>
 
         <div class="prompt-box">
-            <p id="prompt-text">Click "New Challenge" to get started!</p>
+            <p id="prompt-text"></p>
         </div>
     </main>
 
@@ -47,5 +47,9 @@
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
 
     <script src="script.js"></script>
+
+    <footer>
+        <p>Made by SK inspired by <a href="https://sharpen.design/" target="_blank">Sharpen.design</a> and <a href="https://github.com/calluxpore/ID-Prompts" target="_blank">calluxpore/ID-Prompts</a></p>
+    </footer>
 </body>
 </html> 
